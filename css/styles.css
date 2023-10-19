@@ -565,6 +565,7 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
 margin-bottom: 16px;
+text-align: center;
   }
 .footer-form {
   display: flex;
@@ -805,6 +806,9 @@ letter-spacing: 0.04em;
     max-width: 768px;
   }
 
+  .header {
+   
+  }
   .header-navigation {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -883,17 +887,36 @@ letter-spacing: 0.04em;
   .footer-logo {
     display: block;
   }
-}
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer-form {
+    flex-direction: row;
+  
+  }
+    
+  
+
 @media screen and  (min-width: 1158px) {
   .container, .team .container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;;
   }
+
+  .header {
+    
+  }
   .header-address-list {
     display: flex;
+    flex-direction: row;
     gap: 40px;
-    margin-left: auto;}
+  }
     
   .header-address-link {
     font-size: 16px;
