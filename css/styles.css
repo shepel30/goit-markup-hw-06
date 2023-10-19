@@ -897,7 +897,6 @@ letter-spacing: 0.04em;
 
   .footer-form {
     flex-direction: row;
-  
   }
     
   
@@ -955,4 +954,6 @@ font-weight: 500;
   url(../images/people-office-2x.jpg);
     }
 }
+.footer-container {
+  gap: 120px
 }
