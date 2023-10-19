@@ -484,6 +484,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     gap: 72px;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
 
   }
   .footer-info {
@@ -579,7 +580,7 @@ text-align: center;
 }
 
   .footer-form-input {
-    min-width: 165px;
+    min-width: 288px;
     height: 40px;
     border-radius: 4px;
 border: 1px solid #FFF;
