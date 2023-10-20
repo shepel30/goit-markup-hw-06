@@ -170,6 +170,9 @@ pointer-events: auto;
 
   }
   
+  .mob-nav {
+    
+  }
 
   .menu-close-btn {
     display: flex;
@@ -617,6 +620,7 @@ cursor: pointer;
 .backdrop {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.40);
@@ -636,9 +640,9 @@ cursor: pointer;
   border-radius: 4px;
 background-color: #FCFCFC;
 padding-top: 72px;
-padding-right: 24px;
+padding-right: 16px;
 padding-bottom: 24px;
-padding-left: 24px;
+padding-left: 16px;
 position: absolute;
 top: 50%;
 left: 50%;
@@ -825,7 +829,7 @@ letter-spacing: 0.04em;
   .header-address-list {
     display: flex; 
     flex-direction: column;
-    gap: 12px;
+    row-gap: 12px;
     justify-content: flex-end;
   }
 
@@ -905,7 +909,10 @@ letter-spacing: 0.04em;
     flex-direction: row;
   }
     
-  
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
 
 @media screen and  (min-width: 1158px) {
   .container, .team .container {
@@ -960,7 +967,15 @@ font-weight: 500;
   url(../images/people-office-2x.jpg);
     }
 }
+
 .footer-container {
-  gap: 120px
+  display: flex;
+  align-items: baseline;
 }
 
+.footer-form-wrapper {
+  margin-left: auto;
+}
+
+}
+}
