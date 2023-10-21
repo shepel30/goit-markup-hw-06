@@ -46,15 +46,17 @@ img {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .header-container {
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .header-navigation {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  
 }
 .header-menu {
   display: none;
@@ -75,6 +77,7 @@ img {
   background-color: #404bbf; 
   border-radius: 2px; 
 }
+
   .header-logo-black {
     color:#2E2F42;
 font-family: Raleway;
@@ -117,7 +120,7 @@ padding: 24px 0;
   }
   
   .current::after {
-    display: block;
+    display: none;
     height: 4px;
     width: 100%;
     border-radius: 2px;
@@ -132,9 +135,7 @@ bottom: -1px;
   gap: 40px;
   margin-left: auto;
 }
-.header-address-item {
-  
-}
+
   .header-address-link {
     color: #434455;
 font-size: 16px;
@@ -143,6 +144,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .header-address-link:hover,
   .header-address-link:focus {
     color: #404bbf;
@@ -248,7 +250,8 @@ letter-spacing: 0.02em;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 72px 16px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -485,7 +488,8 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   }
   .footer {
-     padding: 96px 0;
+     padding-top: 96px;
+     padding-bottom: 96px;
     background: #2E2F42;
   }
   .footer-container {
@@ -816,9 +820,11 @@ letter-spacing: 0.04em;
     max-width: 768px;
   }
 
-  .header {
-   
+  .header-container {
+    max-width: 768px;
+    padding: 0;
   }
+
   .header-navigation {
     padding: 0;
   }
@@ -842,6 +848,14 @@ letter-spacing: 0.04em;
   font-size: 12px;
   }
 
+  .current::after {
+    display: block;
+  }
+
+  .mob-menu {
+    display: none;
+  }
+
   .modal {
     width: 408px;
   }
@@ -852,6 +866,10 @@ letter-spacing: 0.04em;
 
   .benefits-list-item {
     width: calc((100% - 24px) / 2);
+  }
+
+  .benefits-subtitle {
+    text-align: start;
   }
 
   .team .container {
@@ -892,19 +910,21 @@ letter-spacing: 0.04em;
     url(../images/bg-tab-2x.jpg);
     }
   }
-  .footer {
-    padding-left: 108px;
-  }
+ 
   .footer-logo {
     display: block;
   }
 
   .footer-container {
-    width: 496;
+    width: 496px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
+  }
+
+  .social-media {
+    text-align: start;
   }
 
   .form-text {
@@ -938,6 +958,11 @@ letter-spacing: 0.04em;
   .header-address-link {
     font-size: 16px;
     }
+
+    .mob-menu {
+      display: none;
+    }
+    }
   .benefits {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -953,6 +978,11 @@ letter-spacing: 0.04em;
 font-size: 20px;
 font-weight: 500;
 } 
+
+.solutions {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
 .team-list-item {
   width: calc((100% - 72px) / 4);
 }
@@ -976,11 +1006,15 @@ font-weight: 500;
 .footer-container {
   display: flex;
   align-items: baseline;
+  width: 100%;
 }
 
 .footer-form-wrapper {
   margin-left: auto;
 }
 
+.footer-info {
+  margin-right: 120px;
+}
 }
 }
