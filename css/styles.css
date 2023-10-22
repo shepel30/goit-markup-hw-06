@@ -194,6 +194,8 @@ align-items: center;
   .mob-menu-item:not(:last-child) {
     margin-bottom: 40px;
   }
+
+  
   .mob-menu-link {
     color: #2E2F42;
     font-size: 36px;
@@ -203,6 +205,9 @@ align-items: center;
     text-transform: capitalize;
   }
 
+  .current {
+    color: #404BBF;
+  }
   
   .mob-soc-list {
     display: flex;
@@ -235,12 +240,16 @@ align-items: center;
     margin-top: auto;
   }
 
-  .mob-adress-link {
+  .mob-address-link {
     color: #434455;
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+  }
+
+  .current {
+    color: #404BBF;
   }
 
   .solutions {
@@ -816,13 +825,15 @@ letter-spacing: 0.04em;
 }
 
 @media screen and (min-width: 768px) {
+
   .container {
     max-width: 768px;
   }
 
   .header-container {
     max-width: 768px;
-    padding: 0;
+    padding-top: 0;
+  padding-bottom: 0;
   }
 
   .header-navigation {
@@ -916,7 +927,7 @@ letter-spacing: 0.04em;
   }
 
   .footer-container {
-    width: 496px;
+    width: 552px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -938,6 +949,7 @@ letter-spacing: 0.04em;
     width: 408px;
     min-height: 584px;
   }
+}
 
 @media screen and  (min-width: 1158px) {
   .container, .team .container {
@@ -962,7 +974,7 @@ letter-spacing: 0.04em;
     .mob-menu {
       display: none;
     }
-    }
+    
   .benefits {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -993,28 +1005,28 @@ font-weight: 500;
   background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
   url(../images/people-office.jpg);
     }
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .solutions {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-  url(../images/people-office-2x.jpg);
+    .footer-container {
+      display: flex;
+      align-items: baseline;
+      width: 100%;
     }
-}
+    
+    .footer-form-wrapper {
+      margin-left: auto;
+    }
+    
+    .footer-info {
+      margin-right: 120px;
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .solutions {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+      url(../images/people-office-2x.jpg);
+        }
+    }
+    }
+  
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-  width: 100%;
-}
-
-.footer-form-wrapper {
-  margin-left: auto;
-}
-
-.footer-info {
-  margin-right: 120px;
-}
-}
-}
