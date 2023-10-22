@@ -113,11 +113,6 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 padding: 24px 0;
   }
-  .current {
-    color: #404BBF;
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
   
   .current::after {
     display: none;
@@ -130,6 +125,7 @@ content: "";
 left: 0;
 bottom: -1px;
   }
+
 .header-address-list {
   display: none;
   gap: 40px;
@@ -154,6 +150,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
     border: none;
   }
+  
   .mob-menu {
     position: fixed;
     z-index: 1;
@@ -205,9 +202,6 @@ align-items: center;
     text-transform: capitalize;
   }
 
-  .current {
-    color: #404BBF;
-  }
   
   .mob-soc-list {
     display: flex;
@@ -250,8 +244,10 @@ letter-spacing: 0.02em;
 
   .current {
     color: #404BBF;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
+  
   .solutions {
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
@@ -867,6 +863,11 @@ letter-spacing: 0.04em;
     display: none;
   }
 
+  .solutions {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  
   .modal {
     width: 408px;
   }
